@@ -1,0 +1,29 @@
+class sieuNhan:
+    so_thu_tu=1
+    stt=1
+    sucManh=40
+    def __init__(self,ten,vuKhi,mauSac):
+        self.ten1=ten
+        self.vuKhi1=vuKhi
+        self.mauSac1=mauSac
+        self.stt=sieuNhan.so_thu_tu
+        sieuNhan.so_thu_tu+=1
+    @classmethod
+    def cap_nhap_suc_manh(cls,cnsm):
+        cls.sucManh=cnsm
+
+
+sieuNhan_A=sieuNhan("Sieu nhan vang","Kiem","Vang")
+sieuNhan_B=sieuNhan("Sieu nhan do ", "Sung ","Do")
+sieuNhan_C=sieuNhan("Sieu nhan cam ","Quan xit" ,"Cam")
+
+
+print(sieuNhan_A.sucManh)
+print(sieuNhan_B.stt)
+
+print(sieuNhan_C.stt)
+sieuNhan_A.cap_nhap_suc_manh(45)
+
+print(sieuNhan_A.sucManh)
+print(sieuNhan.sucManh)
+
