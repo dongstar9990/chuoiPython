@@ -68,8 +68,6 @@ def Normalize(X):
     #tính std cho từng feature x
     s = np.std(n,0,dtype = np.float64)
     #tính mean cho từng feature x
-    mu = np.mean(n,0)
-    n = (n-mu)/s
     #gán lại x0 = 1
     n[:,0] = 1
     yield n
